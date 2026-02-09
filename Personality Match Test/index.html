@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartSync 💘</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="hs-wrapper">
+    <h1 class="hs-title">❤️ HeartSync</h1>
+    <p class="hs-brand">by <span id="hs-brand-name">"Company Name"</span></p>
+
+    <!-- STEP 1 -->
+    <div class="hs-step active" id="step-1">
+        <input id="name1" placeholder="Your name">
+        <input id="name2" placeholder="Partner's name">
+        <button onclick="nextStep(2)">Next 💕</button>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="hs-step" id="step-2">
+        <p>Who falls in love faster?</p>
+        <select id="q1">
+            <option>You</option>
+            <option>Partner</option>
+        </select>
+
+        <p>Late-night talks or surprise gifts?</p>
+        <select id="q2">
+            <option>Talks</option>
+            <option>Gifts</option>
+        </select>
+
+        <p>Who gets jealous more?</p>
+        <select id="q3">
+            <option>You</option>
+            <option>Partner</option>
+        </select>
+
+        <button onclick="nextStep(3)">Calculate 💘</button>
+    </div>
+
+    <!-- LOADING -->
+    <div class="hs-step" id="step-3">
+        <p class="hs-loading">Calculating compatibility… 💭</p>
+    </div>
+
+    <!-- RESULT -->
+    <div class="hs-step" id="step-4">
+        <h2 id="hs-percentage"></h2>
+        <h3 id="hs-type"></h3>
+        <p id="hs-message"></p>
+        <button onclick="location.reload()">Try Again 🔄</button>
+    </div>
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

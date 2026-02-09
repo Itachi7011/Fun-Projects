@@ -1,0 +1,77 @@
+
+:root {
+    --primary: #ff4d6d;
+    --secondary: #fad0c4;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hs-wrapper {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+    color: white;
+}
+
+.hs-title {
+    font-size: 2rem;
+}
+
+.hs-brand {
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.hs-step {
+    display: none;
+}
+
+.hs-step.active {
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: none;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    background: white;
+    color: var(--primary);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hs-loading {
+    font-size: 1.2rem;
+    animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+    0% {opacity: 0.4;}
+    50% {opacity: 1;}
+    100% {opacity: 0.4;}
+}

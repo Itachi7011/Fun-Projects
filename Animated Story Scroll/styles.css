@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #ff4d6d, #fad0c4);
+}
+.story-wrapper {
+  scroll-behavior: smooth;
+}
+.story-slide {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+.story-slide.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+#musicToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}

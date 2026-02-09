@@ -1,7 +1,11 @@
 const HEARTSYNC_CONFIG = {
     brandName: "Client’s Brand",
+
     primaryColor: "#ff4d6d",
     secondaryColor: "#fad0c4",
+
+    showMusic: true,
+    showPhoto: true,
 
     relationshipTypes: [
         "Soft Soulmates 💞",

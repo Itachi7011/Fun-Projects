@@ -8,18 +8,24 @@
 </head>
 <body>
 
+<!-- Music Toggle -->
+<button id="hs-music-toggle">🎶</button>
+<audio id="hs-music" loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
 <div class="hs-wrapper">
     <h1 class="hs-title">❤️ HeartSync</h1>
-    <p class="hs-brand">by <span id="hs-brand-name">"Company Name"</span></p>
+    <p class="hs-brand">by <span id="hs-brand-name"></span></p>
 
-    <!-- STEP 1 -->
+    <!-- STEP 1: Names -->
     <div class="hs-step active" id="step-1">
         <input id="name1" placeholder="Your name">
         <input id="name2" placeholder="Partner's name">
         <button onclick="nextStep(2)">Next 💕</button>
     </div>
 
-    <!-- STEP 2 -->
+    <!-- STEP 2: Fun Questions -->
     <div class="hs-step" id="step-2">
         <p>Who falls in love faster?</p>
         <select id="q1">
@@ -42,16 +48,25 @@
         <button onclick="nextStep(3)">Calculate 💘</button>
     </div>
 
-    <!-- LOADING -->
+    <!-- STEP 3: Loading -->
     <div class="hs-step" id="step-3">
         <p class="hs-loading">Calculating compatibility… 💭</p>
     </div>
 
-    <!-- RESULT -->
+    <!-- STEP 4: Result Card -->
     <div class="hs-step" id="step-4">
-        <h2 id="hs-percentage"></h2>
-        <h3 id="hs-type"></h3>
-        <p id="hs-message"></p>
+
+        <div id="hs-card">
+            <h2 id="hs-percentage"></h2>
+            <h3 id="hs-type"></h3>
+
+            <img src="photo.jpg" id="hs-photo">
+
+            <p id="hs-message"></p>
+        </div>
+
+        <p class="hs-hint">📸 Screenshot & share</p>
+
         <button onclick="location.reload()">Try Again 🔄</button>
     </div>
 </div>
